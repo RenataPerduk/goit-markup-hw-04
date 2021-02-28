@@ -135,6 +135,7 @@ header .container {
 
 .contacts-list-link {
   display: inline-block;
+  align-items: center;
   padding: 32px 0;
   font-weight: 500;
   font-size: 14px;
@@ -144,20 +145,15 @@ header .container {
 }
 
 .icon-contacts {
+  display: inline-block;
+  align-items: center;
   margin-right: 10px;
   fill: var(--primary-text-color);
 }
 
-.contacts-item {
-  align-items: center;
-}
 
-.icon-contacts:hover {
-  fill: var(--accent-color);
-}
-
-.contacts-list-link:hover {
-  color: var(--accent-color);
+ .contacts-list-link:hover{
+   color: var(--accent-color);
 }
 
 .contacts-list-link:focus {
@@ -226,15 +222,11 @@ header .container {
   fill: var(--accent-color);
 }
 
-a.features-list-link:hover {
-  border: 1px solid var(--accent-color);
-}
-
 .features-list li:not(:first-child) {
   margin-left: 30px;
 }
 
-.features-list-link {
+.features-list-article {
   display: flex;
   align-items: center;
   padding: 25px 100px;
@@ -276,6 +268,11 @@ a.features-list-link:hover {
 
 .galery-list li:not(:first-child) {
   margin-left: 30px;
+}
+
+.galery-list-item {
+  display: block;
+  max-width: 100%;
 }
 
 .galery-title {
