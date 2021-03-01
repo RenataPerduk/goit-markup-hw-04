@@ -134,7 +134,7 @@ header .container {
 }
 
 .contacts-list-link {
-  display: inline-block;
+  display: flex;
   align-items: center;
   padding: 32px 0;
   font-weight: 500;
@@ -148,7 +148,7 @@ header .container {
   display: inline-block;
   align-items: center;
   margin-right: 10px;
-  fill: var(--primary-text-color);
+  fill: currentColor;
 }
 
 
@@ -297,6 +297,7 @@ ul.galery-list {
   align-items: center;
 }
 
+
 ul.team-list {
   padding: 0;
   margin: 0;
@@ -313,6 +314,7 @@ ul.team-list {
 }
 
 .team-link {
+  fill: var(--primary-text-color);
   display: inline-block;
   align-items: center;
   padding: 12px;
@@ -330,9 +332,13 @@ ul.team-list {
   fill: #ffffff;
 }
 
+.team > .container {
+   padding-top: 94px;
+   padding-bottom: 94px;
+}
+
 .team-title {
   margin: 0 auto 50px;
-  padding-top: 94px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -345,6 +351,10 @@ ul.team-list {
   margin-bottom: 30px;
 }
 
+.team-list > .team-list-item:hover {
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
+    1px 4px 6px rgb(0 0 0 / 16%);
+}
 .team-item-title {
   margin-bottom: 10px;
   font-weight: 500;
@@ -361,26 +371,31 @@ ul.team-list {
   color: var(--primary-text-color);
 }
 
+.team-list-item{
+  display: inline-block;
+  width: 270;
+}
+
 .icon-team:not(:first-child) {
   margin-left: 10px;
 }
 
 .icon-team {
-  fill: var(--primary-text-color);
   text-align: center;
 }
 
-
 .client-title {
+  margin: 0 auto 50px;
+  font-weight: 700px;
+  font-size: 36px;
+  line-height: 42,19px;
+  color: var(--title-text-color);
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-  padding-top: 177px;
-  weight: 700px;
-  size: 36px;
-  line height: 42,19px;
-  width: 390px;
+}
+
+.client > .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .icon-client {
@@ -394,8 +409,8 @@ ul.team-list {
   fill: var(--accent-color);
 }
 
-.client-list-item:hover {
-  border: 1px solid var(--accent-color);
+.client-list-link:hover {
+  : var(--accent-color);
 }
 
 .client-list {
@@ -411,9 +426,6 @@ ul.client-list {
   text-align: center;
 }
 
-.client-thumb {
-  padding-bottom: 94px;
-}
 
 .client-list-link {
   display: flex;
@@ -423,6 +435,7 @@ ul.client-list {
   border: 1px solid #AFB1B8;
   box-sizing: border-box;
   border-radius: 4px;
+  outline: none;
 }
 
 .footer-address-map {
