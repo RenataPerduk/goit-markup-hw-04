@@ -358,7 +358,7 @@ ul.team-list {
 }
 
 .team-item-image {
-  display: inline-block;
+  display: block;
   max-width: 100%;
   object-fit: cover;
 }
@@ -369,7 +369,10 @@ ul.team-list {
 }
 
 .text-thumb {
-  padding: 30px 0 16px;
+  padding: 30px 0;
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
+    1px 4px 6px rgb(0 0 0 / 16%);
+  background: rgba(255, 255, 255, 1);
 }
 
 .team-item-title {
@@ -395,7 +398,6 @@ ul.team-list {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 32px 30px;
 }
 
 .footer .icon-list {
@@ -496,7 +498,6 @@ ul.client-list {
   padding-bottom: 9px;
 }
 
-
 .footer-email:hover {
   color: var(--accent-color);
 }
@@ -506,8 +507,8 @@ ul.client-list {
 }
 
 .footer-logo {
-  display: flex;
-  padding-bottom: 20px;
+  display: inline-block;
+  margin-bottom: 20px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -525,7 +526,7 @@ ul.client-list {
   display: block;
   height: 16px;
   font-weight: 700;
-  size: 14px;
+  font-size: 14px;
   margin-bottom: 20px;
   color: var(--main-background-color);
 }
@@ -563,15 +564,15 @@ ul.client-list {
   width: calc(100% - 70px / 2);
 } */
 
+.portfolio {
+  padding-top: 94px;
+}
+
 .portfolio-button-list {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 6px 22px;
-  height: 26px;
-  padding-top: 94px;
-  padding-bottom: 34px;
-  margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .portfolio-button-list li:not(:first-child) {
@@ -624,13 +625,15 @@ ul.client-list {
 }
 
 .portfolio-item-image {
-  display: inline-block;
+  display: block;
   object-fit: cover;
   max-width: 100%;
 }
 
 .portfolio-text-thumb {
+  border: 1px solid rgba(238, 238, 238, 1);
   padding: 20px 24px;
+  background: rgba(255, 255, 255, 1);
 }
 
 .portfolio-item-header {
